@@ -1,3 +1,5 @@
+from collections import deque
+
 # list
 numbers = list(range(21))
 print(numbers)
@@ -56,3 +58,32 @@ print(filtered_list_of_item)
 example_list_comprehension = [(letter, number)
                               for letter in 'abcd' for number in range(4)]
 print(example_list_comprehension)
+
+# zip function: combines two or more iterables
+
+print(list(zip(numbers, vowels)))
+
+# stacks & queue: linear data structure
+# stack stands for LIFO (last in first out), like a pile of books or pushing the back-button in browser
+# queue stands for FIFO (first in first out), like a line of people in front of a resturant
+# stack & queue will be implemented using deque object in stead of
+
+# stack implementation
+
+stack = deque()
+stack.append(1)
+stack.append(2)
+stack.append(3)
+print(stack)
+stack.pop()
+print(stack)
+
+# queue implementation
+
+queue = deque()
+queue.append(1)
+queue.append(2)
+queue.append(3)
+print(queue)
+queue.popleft()
+print(queue)
