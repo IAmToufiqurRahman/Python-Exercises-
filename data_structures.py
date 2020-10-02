@@ -71,19 +71,17 @@ print(list(zip(numbers, vowels)))
 # stack implementation
 
 stack = deque()
-stack.append(1)
-stack.append(2)
-stack.append(3)
-print(stack)
-stack.pop()
-print(stack)
+for i in range(10):
+    stack.append(i)
+while stack:
+    print(stack.pop())
 
 # queue implementation
 
 queue = deque()
-queue.append(1)
-queue.append(2)
-queue.append(3)
-print(queue)
-queue.popleft()
-print(queue)
+for i in range(10):
+    queue.append(i)
+while queue:
+    print(queue.popleft())
+
+# tuples: tuples are immutable
