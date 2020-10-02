@@ -7,7 +7,7 @@ def gretting(first_name, last_name):
 gretting("ankan", "leo")
 gretting("tousif", "rahman")
 
-# Two types of function : function what returns a value or function what perform a task
+# Two types of function : function that returns a value or function that perform a task
 
 # *args: variable number of non-keyword arguments, returns tuples
 
