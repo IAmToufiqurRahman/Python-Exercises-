@@ -5,7 +5,7 @@ student = input("Are u a student?")
 job_status = input("Do u have a full-time job?")
 age = int(input("How old are u?"))
 
-if student.lower() == "no" and job_status.lower() == "yes" and age >= 22 and age <= 32:
+if student.lower() == "no" and job_status.lower() == "yes" and (age >= 22 and age <= 32):
     print("Eligible for loan")
 else:
     print("Not eligible")
